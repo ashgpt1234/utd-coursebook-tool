@@ -16,9 +16,12 @@ This tool will:
     1. Clone this repository: `git clone https://github.com/bmccary/utd-coursebook-tool.git`
 1. In the `utd-coursebook-tool` directory, copy the file `config.py.example` to `config.py` and edit it (with a text editor) to correspond to your situation.
 1. At a terminal in the `utd-coursebook-tool` directory, type: `scons`
-    1. You'll be prompted for your UTD password.
-    1. A web browser will be started. Assuming you typed your password correctly, you can watch it log in and download all of your files from CourseBook.
+    1. You'll be prompted for your UTD password. A web browser will be started. 
+    1. Assuming you typed your password correctly, you can watch it log in and download all of your files from CourseBook.
+    1. If you didn't log in correctly then the process will time out after about 10 seconds.
 1. And one more time in the terminal, type: `scons`
+
+Notably, this process is inherently serial (because it is driving a web browser) so don't try to run `scons` in parallel mode.
 
 # Prerequisite Software
 
