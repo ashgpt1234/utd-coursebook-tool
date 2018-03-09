@@ -1,0 +1,21 @@
+
+# This needs to be the NetID you're going to log-in to CourseBook with.
+NETID = 'bcm052000'
+
+# When a course contains multiple sections, make a CSV like:
+#
+# Username,lecture
+# aaa00001,001
+# aaa00002,001
+# aaa00003,005
+#
+SECTION_COLUMN = 'lecture'
+
+# A list of courses you want to download.
+COURSE = \
+    [
+        {"term": "18s", "prefix": "MATH", "number": "1314", "section": ["001", "002", "003"]},
+        {"term": "18s", "prefix": "MATH", "number": "1314", "section": ["701"]},
+        {"term": "18s", "prefix": "MATH", "number": "2370", "section": ["001"]}
+    ]
+

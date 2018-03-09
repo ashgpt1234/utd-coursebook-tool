@@ -1,0 +1,6 @@
+*
+!config.py.example
+!.gitignore
+!README.md
+!SConscript
+!SConstruct
