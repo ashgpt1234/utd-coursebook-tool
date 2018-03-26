@@ -169,7 +169,7 @@ def _xlsx_to_csv(target, source, env):
 
     def g():
         for row in rows:
-            if row['Units'] == 'DROP':
+            if row['Units'].startswith('D'):
                 continue
             yield row
 
